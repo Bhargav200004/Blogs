@@ -1,9 +1,16 @@
+import ThemeToggler from "@/components/theme-toggler";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 
 export default function Home() {
   return (
     <main className="p-10">
+      <nav className="w-full flex justify-end">
+        <div className=" flex items-center gap-2 ml-auto">
+          <ThemeToggler />
+        </div>
+      </nav>
+
       <h1 className="text-7xl mb-8 tracking-tight font-bold text-center">
         Blogs
       </h1>
