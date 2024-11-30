@@ -1,23 +1,13 @@
-'use client'
-
+import ThemeToggler from "@/components/theme-toggler";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-import { Switch } from "@/components/ui/switch";
 
 export default function Home() {
-
   return (
     <main className="p-10">
       <nav className="w-full flex justify-end">
         <div className=" flex items-center gap-2 ml-auto">
-        <Switch 
-          onCheckedChange={value => {
-            
-
-            }
-          }
-        />
-        <span>light/dark</span>
+          <ThemeToggler />
         </div>
       </nav>
 
