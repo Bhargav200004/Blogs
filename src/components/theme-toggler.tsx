@@ -33,14 +33,8 @@ export default function ThemeToggler() {
       <Switch
         checked={state === "dark"}
         onCheckedChange={(value) => {
-          let newTheme : string ;
-
-if (value) {
-  newTheme = "dark";
-} else {
-  newTheme = "light";
-}
-          // updating theme
+          const newTheme = value ? "dark" : "light";
+          // updating
           applyTheme(newTheme);
         }}
       />
